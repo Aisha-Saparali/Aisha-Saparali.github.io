@@ -1,328 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-<!--Linking my CSS file-->
-  <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <title>Aisha Saparali</title>
+    </head>
+    <body>
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Aisha Saparali</a>
+                </div>
 
-  <title>CSS Design</title>
-</head>
-<body>
-  <!-- HEADER -->
-  <header>
-    <div class="banner">Web Programming...</div>
-  </header>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Experience</a></li>
+                        <li class="nav__item"><a href="#leadership" class="nav__link">Leadership </a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work </a></li>
+                        <li class="nav__item"><a href="#volunteering" class="nav__link">Volunteering </a></li>
+                        <li class="nav__item"><a href="#extracurricular" class="nav__link">Extracurriculars</a></li>
+                    </ul>
+                </div>
 
-  <!-- Navbar -->
-  <nav>
-      <a class="logo" href="#">
-        <img src="logo.png" alt="logo" width="80px" height="80px">
-      </a>
-      <label for="hamburger" class="hamburger-icon"></label>
-    <input class="checkbox" type="checkbox" id="hamburger"/>
-      <ul class="menu">
-        <li><a class="active" href="#task">Task</a></li>
-        <li><a href="#requirements">Requirements</a></li>
-        <li><a href="#submission">Submission</a></li>
-        <li><a href="#grading">Grading</a></li>
-        <li><a href="#deadline">Deadline</a></li>
-        <li><a href="#">SignIn</a></li>
-      </ul>
-    </nav>
-    
-  <!-- Main Content -->
-  <section class="main_content">
-    <h1 id="main-heading" class="topic">
-      Lab 4 - Designing with CSS 
-    </h1>
-    <hr>
-    <article id="task">
-      <h2 >Task</h2>
-      <p>
-        <img src="nature.jpg" alt="" width="300px" height="210">
-        As you have alredy learned in the last lecture, 
-        CSS is about the presentation of the documents
-        like HTML or XML.
-        So, in this lab assignment you need to form a group of two people and then together apply
-        CSS styling rules to make this template HTML file look
-        beautiful and interesting.  
-      </p>
-      <p>
-        There are no 
-        limits to what techniques you use and how you 
-        ultimately solve this task. 
-        However, there are some minimal requirements
-        which are explained in the next section below.
-        <a href="#requirements">Next...</a>
-      </p>
-    </article>
-    <article id="requirements">
-      <h2 >Requirements</h2>
-      <p>
-        
-        The main requirement for this task is to 
-        style this HTML document without any 
-        changes (including adding new and deleting the existing elements) to itself except for these cases: 
-        <ul>
-          <li>
-            You can add <strong>id</strong>
-            and <strong>class</strong> 
-            attributes to the ncessary elements. 
-            </li>
-            <li>
-            You can replace the 
-            images in the defined elements within this document with your
-            own ones. 
-            </li><li>
-            Notice that there is a place for a 
-            large banner on the top of the page,
-            you <strong>must</strong> place an image there only using CSS.
-            </li>
-            <li>
-              You <strong>must</strong> write your names in the specified fields below.
-            </li>
-            <li>You can change the location
-              of in the map below or replace it with the image.
-            </li>
-        </ul>
-      </p>
-      <p>
-        In your stylesheet you <strong>must</strong>
-         use these selectors:
-        <ul>
-          <li>Element selectors;</li>
-          <li>Class selectors;</li>
-          <li>Attribute selectors;</li>
-          <li>ID selectors.</li>
-          <li>Pseudo-class selectors.</li>
-        </ul>
-      </p>
-      <p>
-        Also, you <strong>must</strong> 
-        use the necessary CSS properties
-        and demonstrate the following changes
-        of the elements:
-        <ul>
-          <li>font and background colors;</li>
-          <li>font family and size;</li>
-          <li>margin, padding and borders;</li>
-          <li>image sizes (width and height);</li>
-          <li>text alignment (horizontal and vertical);</li>
-        </ul>
-        Additionally, a special focus <strong>must</strong> 
-        be done to the menu links.        
-        They need to change their status appropriately 
-        (active, hover, visited)
-        as well as be placed in a natural way,
-        i.e. horizontally or vertically. 
-        <a href="#submission">Next...</a>
-      </p>
-    </article>
-    <article id="submission">
-      <h2>Submission</h2>
-      <p>
-       As usual, you <strong>must</strong> submit 
-       your work via Github. All the files and images need to go to 
-       your <strong> <i>username.github.io</i> </strong>repository. 
-       Also, this page must be available 
-       through this domain name.
-      </p>
-      <h3>Group</h3>
-      <p>
-        Since this is a group project, i.e. a team of two members,
-        it is required to insert a photo of your group
-        in this <strong>&lt;img&gt;</strong> element and write your names in the
-        following list items. <br>
-         <img src="planets.jpg" alt="" width="300px" height="210">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-        <ul>
-          <li>Aisha Saparali aka Sponge Bob</li>
-          <li>Liliya Mukhamejanova aka Patrick</li>
-        </ul>
-        Also, to submit your group members, 
-        please fill in the this 
-        <a href="#">Google Sheet</a> form. 
-        <a href="#grading">  Next...</a>
-      </p>
-    </article>
-    <article id="grading">
-      <h2>Grading</h2>
-      For this assignment you will get 
-      <strong>80 points</strong>  in total.
-      The final score is the sum of the points 
-      for each of the criteria below.
-      This score will be the same for both 
-      of the team members.
-      <table>
-        <tr>
-          <th>Criteria</th>
-          <th>Points</th>
-        </tr>
-        <tr>
-          <td>Group is formed </td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>CSS file is linked to the document</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Banner image is present</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Menu is styles appropriately</td>
-          <td>5 pts</td>
-        </tr>
-        
-        <tr>
-          <td>Group photo is present </td>
-          <td>5 pts</td>
-        </tr>
-         <tr>
-          <td>HTML file is unchanged</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Required selectors are used</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Required CSS properties are used</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Website is available online</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Website looks nice and not broken</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Extra cool stuff is used</td>
-          <td>5 pts</td>
-        </tr>
-        </tr>
-      </table>
-    </article>
-  </section>
+        <main class="l-main">
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Aisha Saparali</span><br></h1>
 
-  <!-- Aside Information -->
-  <aside>
-    <h3>Important</h3>
-    <section class="aside_content">
-      <article id="deadline">
-        <h4>Deadlines:</h4>
-        There are two deadlines - one for 
-        forming a group and the other is for the 
-        submission of the assignment itself.
-        <ul>
-          <li>Group: Sep. 9, 2022, 23:59</li>
-          <li>Submission: Sep. 18, 2022, 23:59</li>
-        </ul>
-        <p>
-        Missing the deadline for the group formation will result in 
-        <strong> not getting any points</strong> for the corresponding criteria. <br>
-        </p>
-        <p>And, as usual, missing the deadline for submittion of your work will result in reduction of your score by 50%.</p>
-        
-        <a href="#">More...</a>
-      </article>
-      </section>
-     
-        <h3>Some Dummy Content</h3>
-       <section>
-        <article>
-        <h4>Article 1</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-      <article>
-        <h4>Article 2</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-      <article>
-        <h4>Article 3</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-    </section>
-  </aside>
+                    <a href="#contact" class="button">Contact</a>
+                </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="contacts">
-      <div >
-        <h5>Contacts</h5>
-        <p>
-          Nazarbayev University <br>
-          53 Kabanbay Batyr ave. <br>
-          Block 7, Room 7.422 <br>
-          Ph.: +7-7172-123-4567 <br>
-          <a href="mailto:info@naturallyinspired.com" class="email">
-            info@naturallyinspired.com
-          </a>
-        </p>
-      </div>
-      <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64902601.125724904!2d39.373887599999954!3d-6.849736399999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68357b2157b9cf%3A0x3e4505da5cfe80d0!2sBikini%20Bottom!5e0!3m2!1sru!2skz!4v1663417349964!5m2!1sru!2skz"  
-                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-          </iframe>
-      </div>
-    </div>
-    <div class="categories">
-      <h5>Top 10 Categories</h5>
-      <ul>
-        <li><a href="#">Category 1</a></li>
-        <li><a href="#">Category 2</a></li>
-        <li><a href="#">Category 3</a></li>
-        <li><a href="#">Category 4</a></li>
-        <li><a href="#">Category 5</a></li>
-        <li><a href="#">Category 6</a></li>
-        <li><a href="#">Category 7</a></li>
-        <li><a href="#">Category 8</a></li>
-        <li><a href="#">Category 9</a></li>
-        <li><a href="#">Category 10</a></li>
-      </ul>
-    </div>
-    <div class="quick_links">
-      <h5>Quick Links</h5>
-      <ul>
-        <li><a href="#">Item1</a></li>
-        <li><a href="#">Item2</a></li>
-        <li><a href="#">Item3</a></li>
-        <li><a href="#">Item4</a></li>
-        <li><a href="#">Item5</a></li>
-        <li><a href="#">Item6</a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
+                <div class="home__social">
+                    <p class="blank">blank blank blank blank</p>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 400 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/about.jpg"/>
+                    </svg>
+
+                </div>
+            </section>
+
+            <section class="about section " id="about">
+                <h2 class="section-title">About me</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">I'm Aisha Saparali</h2>
+                        <p class="about__text">A senior year student of B.A. in both Political Science and International Relations and World Languages, Linguistics, and Literature at Nazarbayev University (NU). She was awarded twice the Deans-list award and the Golden Token for graduation from school with distinctive academic achievement. She can lead teammates and do team or individual presentations, which are seen in her active membership and participation in NU Theater and in the presidency of the NU Mandarin Speaking club. She has work experience with research publishing a paper in Kazakh for a seminar and now working on a research paper on tutoring writing. She has assisted first-year students in the role of a Peer Advisor and has been helping students with their writing skills in the role of a Writing Tutor at NU Writing Center.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="education_section" id="education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="https://nu.edu.kz/" target="blank" class="work__img">
+                        <img src="assets/img/photo_2022-12-04_22-40-46.jpg" alt="">
+                    </a>
+                    <div>
+                        <p class="about__text">
+                            • Bachelor of Arts, Nazarbayev University, Expected May 2023 <br>
+                            • Double Major: Political Science & International Relations and World Languages, Linguistics, & Literatures own ones. <br>
+                            • Cumulative GPA: 3.76 <br>
+                        </p>
+                    </div>
+                    <div></div>
+                    <a href="https://www.tsinghua.edu.cn/gss/" target="blank" class="work__img">
+                        <img src="assets/img/photo_2022-12-04_22-40-51.jpg" alt="">
+                    </a>
+                    <div>
+                        <p class="about__text">
+                            • Tsinghua Global Summer School 2020 (Online), July 2020 – July 2020 <br>
+                            • Analyzed prospects and leadership strategies in the post-pandemic world <br>
+                        </p>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="skills section" id="leadership">
+                <h2 class="section-title">Leadership experience</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h2 class="skills__subtitle">Leadership experience</h2>
+                        <div>
+                            <p class="about__text">
+                                President, Nazarbayev University Mandarin Speaking club, January 2021 – Present <br>
+                                • Conducting and instructing two sessions per week: a speaking session and a video session
+                                <br>
+                                • Preparing the content and materials on the Mandarin Chinese characters’ etymology <br>
+                                Student Member (Actress) and Director of plays and musicals, Nazarbayev University Theater, January 2019 – Present
+                                <br>
+                                • Managing a team of actors and stage managers and providing critical feedback on actors’ work
+                                <br>
+                                Monitor and treasurer of the class, 80th High School-Lyceum Class, September 2015 – May 2018
+                                <br>
+                                • Managed budgeting, documentation, and organization for 3 years <br>
+                                • Directly contacted the head teacher and other instructors <br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="assets/img/istockphoto-1022704946-170667a.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                   <div>
+                       <p class="about__text">
+                           Writing Tutor, Nazarbayev University Writing Center, August 2022 – Present <br>
+                           • Doing research for publication and participation in the conference <br>
+                           • Tutoring Undergraduate students in individual consultations <br>
+                       </p>
+                   </div>
+                    <div>
+                        <p class="about__text">
+                            Writing Fellow, Nazarbayev University, August 2021 – June 2022 <br>
+                            • Assisting university students with their writing skills <br>
+                            • Conducting individual consultations and doing her own research <br>
+                            Teacher, Skyeng Online English School, May 2020 – Present <br>
+                            • Teaching Business and Academic English <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="about__text">
+                            Policy Intern, Ministry of Foreign Affairs, June 2022 – July 2022 <br>
+                            • Organizing documentary and archive materials <br>
+                            • Doing tasks assigned by the Head Counsel of the Department of Human Resources <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="about__text">
+                            Academic Manager, Nazarbayev University Model United Nations, August 2021 – May 2022 <br>
+                            • Prepared Model United Conference presentations and materials <br>
+                            • Communicated with faculty departments and played an important role in decision-making processes <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="about__text">
+                            Social Media Manager, Nazarbayev University Model United Nations, August 2020 – August 2021 <br>
+                            Managed social media networks: Instagram, VKontakte <br>
+                            • Wrote posts in three languages: Kazakh, Russian, and English <br>
+                        </p>
+
+                    </div>
+                    <div>
+                        <p class="about__text">
+                            Commercial Law Internship Experience, Bright Network the UK, August 2020 <br>
+                            • Applied gained knowledge while working with a client’s commercial agreement <br>
+                            Part-time worker, Organization360, October 2019 – January 2020 <br>
+                            • Investigated and harvested information on the world's top NGO's CEO and staff members. <br>
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <section class="skills section" id="volunteering">
+                <h2 class="section-title">Volunteering experience</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <img src="assets/img/volunteer-hands-optimized-greyscale_orig.jpg" alt="" class="skills__img">
+                    </div>
+                    <div>
+                        <h2 class="skills__subtitle">Volunteering experience</h2>
+                        <div>
+                            • Peer Advisor, Nazarbayev University Academic Advising Office, January 2022 – May 2022 <br>
+                            • Assisted undergraduate students faced with academic or personal issues through consultations
+                            <br>
+                            • Conducted individual events and workshops on time management <br>
+                            • Tutoring Kazakh Language to International Students, June 2021 - July 2021 <br>
+                            • Worked with and supervised individually two students coming from the U.S. and Germany by providing individual speaking sessions and consultations
+                            <br>
+                            • Volunteer, The Open Event with Barbara Oakley, September 2019 <br>
+                            • Accompanied the guest and her companion <br>
+                            • Assisted in registration and seat organization <br>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="`work section`" id="extracurricular">
+                <h2 class="section-title">Extracurricular activities</h2>
+
+                <div class="work__container bd-grid">
+                    <div>
+                        <p class="about__text">
+                            The National Conference on Peer Tutoring in Writing (NCPTW) 2022, University of Nebsraska at Omaha, October 2022
+                            <br>
+                            Scholarships and awards <br>
+                            TFAS Asia, International Academic Program, Summer 2023 <br>
+                            1st place in Maths, Chemistry, and English School Olympiads; 2nd place in poetry reading <br>
+                        </p>
+
+                    </div>
+                    <div>
+                        <p class="about__text">
+                            Dean’s list for Spring 2021, Nazarbayev University, September 2021 <br>
+                            Dean’s list for Fall 2019, Nazarbayev University, March 2020 <br>
+                            Altyn Belgi (Golden token), Ministry of Education and Science of the Republic of Kazakhstan, June 2018
+                            <br>
+                            Certifications <br>
+                            Data Analysis and Visualization with Microsoft Power BI (Top Student), DataBoom.kz, November 2020
+                            <br>
+                        </p>
+
+                    </div>
+                    <div>
+                        <p class="about__text">
+                            TFAS Global Political Economy Seminar, The Fund for American Studies (TFAS), August 2020 <br>
+                            Programming Fundamentals, Duke University, June 2020 <br>
+                            Excel Skills for Business: Essentials, Macquarie University, May 2020 <br>
+                            Research article “Назипа Құлжанованың өмірі мен шығармашылығы”(Nazipa Kulzhanova: Life and work of the first Kazakh-woman journalist), December 2017
+                            <br>
+                        </p>
+
+                    </div>
+                    <div>
+                        <p class="about__text">
+                            Materials VI Republican Scientific-Practical Student’s Conference “G-Global – Globalization Platform: Science and Youth” (pp. 376-379).
+                            <br>
+                            Presented individually the article and participated in open discussion of the work with other undergraduate and master’s degree students
+                            <br>
+                            Contestant, High School Competitions, September 2017 - May 2018 <br>
+                        </p>
+
+                    </div>
+                    <div>
+                        <p class="about__text">
+                            Contestant, Regional Olympiads, January 2017 - May 2017 <br>
+                            1st place in Math in Kazakhstan Distant Olympiad (Awards are “The best result of the city”, “The best result of the region”, and “The Golden Result”)
+                            <br>
+                            Microsoft Word, PowerPoint, Excel, Power BI, work with Google environment. <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="about__text">
+                            Languages: Kazakh (native), Russian (bilingual, fluent), English (fluent), Chinese (Upper-Intermediate), Korean (Pre-Intermediate, written), German (Pre-Intermediate), French (Pre-Intermediate)
+                            <br>
+                            Stage performance, public speaking, presentation skills, analytical and critical thinking, teamwork, poetry.
+                            <br>
+                        </p>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <secion>
+                <div class="blank">
+                   blank <br>
+                    blank <br>
+                    blank <br>
+
+                </div>
+            </secion>
+
+
+        </main>
+
+
+
+        <footer class="footer" id="contact">
+            <p class="footer__title">Aisha Saparali</p>
+            <div class="footer__social">
+                <a href="www.linkedin.com/in/aisha-saparali" class="footer__icon"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://t.me/liaisha" class="footer__icon"><i class='bx bxl-telegram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </footer>
+
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
